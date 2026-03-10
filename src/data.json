@@ -51,7 +51,8 @@
     "children": [
       { "icon": "scanners", "url": "https://beta.streak.tech/", "label": "Streak" },
       { "icon": "trading", "url": "https://zerodha.com", "label": "Zerodha" },
-      { "icon": "paper trades", "url": "https://sensibull.com", "label": "Sensibull" }
+      { "icon": "paper trades", "url": "https://sensibull.com", "label": "Sensibull" },
+      { "icon": "stockmock", "url": "https://https://www.stockmock.in/#!/", "label": "Stockmock"}
     ]
   },
   {
