@@ -7,19 +7,19 @@ import * as THREE from 'three';
 
 // 1. GENERIC PLANET TEXTURES (Your Exact List)
 const PLANET_TEXTURES = [
-    "/youtube-radial-menu/textures/one.jpg",
-    "/youtube-radial-menu/textures/02.png",   // .png
-    "/youtube-radial-menu/textures/03.jpeg",  // .jpeg
-    "/youtube-radial-menu/textures/04.jpg",
-    "/youtube-radial-menu/textures/05.jpg",
-    "/youtube-radial-menu/textures/06.jpg",
-    "/youtube-radial-menu/textures/07.jpg",
-    "/youtube-radial-menu/textures/08.jpg",
-    "/youtube-radial-menu/textures/09.jpeg"   // .jpeg
+    "/mymenu-yt/textures/one.jpg",
+    "/mymenu-yt/textures/02.png",   // .png
+    "/mymenu-yt/textures/03.jpeg",  // .jpeg
+    "/mymenu-yt/textures/04.jpg",
+    "/mymenu-yt/textures/05.jpg",
+    "/mymenu-yt/textures/06.jpg",
+    "/mymenu-yt/textures/07.jpg",
+    "/mymenu-yt/textures/08.jpg",
+    "/mymenu-yt/textures/09.jpeg"   // .jpeg
 ];
 
 // 2. FALLBACK IMAGE (Prevents white screen/crash if a specific logo is missing)
-const PLACEHOLDER_LOGO = "/youtube-radial-menu/logos/placeholder.png"; 
+const PLACEHOLDER_LOGO = "/mymenu-yt/logos/placeholder.png"; 
 
 // --- COMPONENT: THE SUN (Center Button) ---
 function Sun({ onReset }) {
@@ -56,7 +56,7 @@ function Planet({ item, index, total, radiusX, radiusZ, onClick, isChild }) {
     if (isChild && item.label) {
         // Example: "AI Tools" -> "ai_tools.png"
         const filename = item.label.toLowerCase().replace(/[^a-z0-9]/g, '_') + '.png';
-        idealPath = `/youtube-radial-menu/logos/${filename}`;
+        idealPath = `/mymenu-yt/logos/${filename}`;
     } else {
         // Main planets use generic textures from your list
         idealPath = PLANET_TEXTURES[index % PLANET_TEXTURES.length];
