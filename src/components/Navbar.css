@@ -56,3 +56,38 @@
   display: flex;
   align-items: center;
 }
+
+/* Left group: back button + toggle side by side */
+.left-group {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  pointer-events: auto;
+}
+
+/* ← Portfolio pill */
+.back-pill {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  text-decoration: none;
+  color: rgba(255,255,255,0.5);
+  font-size: 11px;
+  font-family: 'Courier New', monospace;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  padding: 7px 13px;
+  border: 1px solid rgba(255,255,255,0.12);
+  border-radius: 20px;
+  background: rgba(0,0,0,0.4);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  transition: color 0.2s, border-color 0.2s, background 0.2s;
+  white-space: nowrap;
+}
+
+.back-pill:hover {
+  color: #ffaa00;
+  border-color: rgba(255,170,0,0.45);
+  background: rgba(0,0,0,0.7);
+}
