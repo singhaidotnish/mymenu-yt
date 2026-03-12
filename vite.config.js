@@ -5,4 +5,16 @@ import react from '@vitejs/plugin-react'
 export default defineConfig({
   plugins: [react()],
   base: "/mymenu-yt/",
+  server: {
+    headers: {
+      "X-Frame-Options": "ALLOWALL",
+      "Content-Security-Policy": "frame-ancestors 'self' https://nishith.is-a.dev",
+    }
+  },
+  preview: {
+    headers: {
+      "X-Frame-Options": "ALLOWALL",
+      "Content-Security-Policy": "frame-ancestors 'self' https://nishith.is-a.dev",
+    }
+  }
 })
