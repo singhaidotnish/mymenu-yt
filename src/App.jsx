@@ -74,7 +74,7 @@ function App() {
       updatedItems.push(newLinkObject);
     } else {
       updatedItems = updatedItems.map(item => {
-        if (item.id === parseInt(newItem.parentId)) {
+        if (item.id === newItem.parentId) {
           return { ...item, children: [...(item.children || []), newLinkObject] };
         }
         return item;
