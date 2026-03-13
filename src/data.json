@@ -209,6 +209,14 @@
         "icon": "render",
         "url": "https://render.com",
         "label": "Render"
+      },
+      {
+        "id": 1773363348531,
+        "label": "BitWarden",
+        "url": "https://vault.bitwarden.com/#/login",
+        "icon": "link",
+        "img": null,
+        "children": null
       }
     ]
   }
