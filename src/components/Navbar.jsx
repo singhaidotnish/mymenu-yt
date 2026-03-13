@@ -22,17 +22,6 @@ const Navbar = ({ is3D, onToggle, onAddClick, onGithubSave, githubStatus }) => {
 
       {/* 2. RIGHT SIDE: GitHub Save + Add Button */}
       <div className="right-group">
-        <button
-          className={`nav-github-btn ${githubStatus}`}
-          onClick={onGithubSave}
-          title="Save to GitHub"
-        >
-          <Github size={18} />
-          <span className="github-btn-label">
-            {githubStatus === 'saving' ? 'Saving...' : githubStatus === 'saved' ? '✓ Saved!' : githubStatus === 'error' ? '✗ Failed' : 'Save to GitHub'}
-          </span>
-        </button>
-
         <button 
           className="nav-add-btn" 
           onClick={onAddClick} 
