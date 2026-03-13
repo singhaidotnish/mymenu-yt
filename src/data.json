@@ -4,29 +4,61 @@
     "label": "YouTube",
     "icon": "youtube",
     "children": [
-        {
-            "img": "images/samwebster.png",
-            "url": "https://youtube.com/@samwebster",
-            "label": "Sam Webster"
-        },
-        {
-            "img": "images/living-springs-retreat.png",
-            "url": "https://youtube.com/@LivingSpringsRetreat",
-            "label": "Living Spring"
-        },
-        {
-            "img": "images/the-iitian-trader-official.png",
-            "url": "https://youtube.com/@theiitiantrader_official",
-            "label": "IITian Trader"
-        },
-      { "icon": "dollar", "url": "https://youtube.com/@besantmaheshwari", "label": "Basant M" },
-      { "icon": "heart", "url": "https://youtube.com/@drseemajain", "label": "Dr Seema" },
-      { "icon": "user", "url": "https://youtube.com/@indraanilguha", "label": "Indranil" },
-      { "icon": "code", "url": "https://youtube.com/@apnacollegeofficial", "label": "Apna College" },
-      { "icon": "utensils", "url": "https://youtube.com/@cookingsorted", "label": "Cooking" },
-      { "icon": "activity", "url": "https://youtube.com/@askdoctors24", "label": "Ask Docs" },
-      { "icon": "message", "url": "https://youtube.com/@coachingwithbrookes", "label": "Brookes" },
-      { "icon": "help", "url": "https://youtube.com/@askhavivanything", "label": "Haviv" }
+      {
+        "img": "images/samwebster.png",
+        "url": "https://youtube.com/@samwebster",
+        "label": "Sam Webster"
+      },
+      {
+        "img": "images/living-springs-retreat.png",
+        "url": "https://youtube.com/@LivingSpringsRetreat",
+        "label": "Living Spring"
+      },
+      {
+        "img": "images/the-iitian-trader-official.png",
+        "url": "https://youtube.com/@theiitiantrader_official",
+        "label": "IITian Trader"
+      },
+      {
+        "icon": "dollar",
+        "url": "https://youtube.com/@besantmaheshwari",
+        "label": "Basant M"
+      },
+      {
+        "icon": "heart",
+        "url": "https://youtube.com/@drseemajain",
+        "label": "Dr Seema"
+      },
+      {
+        "icon": "user",
+        "url": "https://youtube.com/@indraanilguha",
+        "label": "Indranil"
+      },
+      {
+        "icon": "code",
+        "url": "https://youtube.com/@apnacollegeofficial",
+        "label": "Apna College"
+      },
+      {
+        "icon": "utensils",
+        "url": "https://youtube.com/@cookingsorted",
+        "label": "Cooking"
+      },
+      {
+        "icon": "activity",
+        "url": "https://youtube.com/@askdoctors24",
+        "label": "Ask Docs"
+      },
+      {
+        "icon": "message",
+        "url": "https://youtube.com/@coachingwithbrookes",
+        "label": "Brookes"
+      },
+      {
+        "icon": "help",
+        "url": "https://youtube.com/@askhavivanything",
+        "label": "Haviv"
+      }
     ]
   },
   {
@@ -34,14 +66,46 @@
     "label": "AI Tools",
     "icon": "bot",
     "children": [
-      { "icon": "message", "url": "https://claude.ai", "label": "Claude" },
-      { "icon": "bot", "url": "https://chatgpt.com", "label": "ChatGPT" },
-      { "icon": "code", "url": "https://chat.deepseek.com", "label": "DeepSeek" },
-      { "icon": "sun", "url": "https://gemini.google.com", "label": "Gemini" },
-      { "icon": "search", "url": "https://www.perplexity.ai", "label": "Perplexity" },
-      { "icon": "mic", "url": "https://otter.ai", "label": "Otter.ai" },
-      { "icon": "video", "url": "https://runwayml.com", "label": "RunwayML" },
-      { "icon": "image", "url": "https://www.midjourney.com", "label": "Midjourney" }
+      {
+        "icon": "message",
+        "url": "https://claude.ai",
+        "label": "Claude"
+      },
+      {
+        "icon": "bot",
+        "url": "https://chatgpt.com",
+        "label": "ChatGPT"
+      },
+      {
+        "icon": "code",
+        "url": "https://chat.deepseek.com",
+        "label": "DeepSeek"
+      },
+      {
+        "icon": "sun",
+        "url": "https://gemini.google.com",
+        "label": "Gemini"
+      },
+      {
+        "icon": "search",
+        "url": "https://www.perplexity.ai",
+        "label": "Perplexity"
+      },
+      {
+        "icon": "mic",
+        "url": "https://otter.ai",
+        "label": "Otter.ai"
+      },
+      {
+        "icon": "video",
+        "url": "https://runwayml.com",
+        "label": "RunwayML"
+      },
+      {
+        "icon": "image",
+        "url": "https://www.midjourney.com",
+        "label": "Midjourney"
+      }
     ]
   },
   {
@@ -49,10 +113,26 @@
     "label": "Trading",
     "icon": "trending",
     "children": [
-      { "icon": "scanners", "url": "https://beta.streak.tech/", "label": "Streak" },
-      { "icon": "trading", "url": "https://zerodha.com", "label": "Zerodha" },
-      { "icon": "paper trades", "url": "https://sensibull.com", "label": "Sensibull" },
-      { "icon": "stockmock", "url": "https://https://www.stockmock.in/#!/", "label": "Stockmock"}
+      {
+        "icon": "scanners",
+        "url": "https://beta.streak.tech/",
+        "label": "Streak"
+      },
+      {
+        "icon": "trading",
+        "url": "https://zerodha.com",
+        "label": "Zerodha"
+      },
+      {
+        "icon": "paper trades",
+        "url": "https://sensibull.com",
+        "label": "Sensibull"
+      },
+      {
+        "icon": "stockmock",
+        "url": "https://https://www.stockmock.in/#!/",
+        "label": "Stockmock"
+      }
     ]
   },
   {
@@ -60,21 +140,76 @@
     "label": "Utilities",
     "icon": "wrench",
     "children": [
-      { "icon": "nmmc", "url": "https://www.nmmc.gov.in/", "label": "NMMC" },
-      { "icon": "paypal", "url": "https://www.paypal.com/in/home", "label": "Paypal" },
-      { "icon": "github", "url": "https://github.com", "label": "GitHub" },
-      { "icon": "linkedin", "url": "https://www.linkedin.com", "label": "LinkedIn" },
-      { "icon": "twitter", "url": "https://twitter.com", "label": "Twitter" },
-      { "icon": "facebook", "url": "https://www.facebook.com", "label": "Facebook" },
-      { "icon": "instagram", "url": "https://www.instagram.com", "label": "Instagram" },
-      { "icon": "cloudinary", "url": "https://cloudinary.com", "label": "Cloudinary" },
-      { "icon": "nishith", "url": "https://nishith.is-a.dev", "label": "Nishith" },      
-      { "icon": "aws", "url": "https://aws.amazon.com", "label": "AWS" },
-      { "icon": "gcp", "url": "https://cloud.google.com", "label": "GCP" },
-      { "icon": "digitalocean", "url": "https://www.digitalocean.com", "label": "DigitalOcean" },
-      { "icon": "vercel", "url": "https://vercel.com", "label": "Vercel" },
-      { "icon": "render", "url": "https://render.com", "label": "Render" }
-
+      {
+        "icon": "nmmc",
+        "url": "https://www.nmmc.gov.in/",
+        "label": "NMMC"
+      },
+      {
+        "icon": "paypal",
+        "url": "https://www.paypal.com/in/home",
+        "label": "Paypal"
+      },
+      {
+        "icon": "github",
+        "url": "https://github.com",
+        "label": "GitHub"
+      },
+      {
+        "icon": "linkedin",
+        "url": "https://www.linkedin.com",
+        "label": "LinkedIn"
+      },
+      {
+        "icon": "twitter",
+        "url": "https://twitter.com",
+        "label": "Twitter"
+      },
+      {
+        "icon": "facebook",
+        "url": "https://www.facebook.com",
+        "label": "Facebook"
+      },
+      {
+        "icon": "instagram",
+        "url": "https://www.instagram.com",
+        "label": "Instagram"
+      },
+      {
+        "icon": "cloudinary",
+        "url": "https://cloudinary.com",
+        "label": "Cloudinary"
+      },
+      {
+        "icon": "nishith",
+        "url": "https://nishith.is-a.dev",
+        "label": "Nishith"
+      },
+      {
+        "icon": "aws",
+        "url": "https://aws.amazon.com",
+        "label": "AWS"
+      },
+      {
+        "icon": "gcp",
+        "url": "https://cloud.google.com",
+        "label": "GCP"
+      },
+      {
+        "icon": "digitalocean",
+        "url": "https://www.digitalocean.com",
+        "label": "DigitalOcean"
+      },
+      {
+        "icon": "vercel",
+        "url": "https://vercel.com",
+        "label": "Vercel"
+      },
+      {
+        "icon": "render",
+        "url": "https://render.com",
+        "label": "Render"
+      }
     ]
   }
 ]
