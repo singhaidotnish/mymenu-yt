@@ -22,7 +22,7 @@ function App() {
 
   const [items] = useState(initialData);
 
-  // â”€â”€ Push to GitHub â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
+  //  Push to GitHub 
   const pushToGithub = async (token, itemsToSave) => {
     setSaveStatus('saving');
     try {
@@ -38,7 +38,7 @@ function App() {
         {
           method: 'PUT',
           headers: { Authorization: `Bearer ${token}`, Accept: 'application/vnd.github+json', 'Content-Type': 'application/json' },
-          body: JSON.stringify({ message: 'ðŸ”— Update menu links via app', content, sha }),
+          body: JSON.stringify({ message: ' Update menu links via app', content, sha }),
         }
       );
       if (putRes.ok) {
@@ -68,7 +68,7 @@ function App() {
     pushToGithub(token, itemsToSave);
   };
 
-  // â”€â”€ Add link â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
+  //  Add link 
   const handleSaveToGithub = (e) => {
     e.preventDefault();
     if (!newItem.label) return;
@@ -96,7 +96,7 @@ function App() {
     getTokenAndPush(updatedItems);
   };
 
-  // â”€â”€ Delete link â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
+  //  Delete link 
   const handleDelete = (sectorId, childIndex) => {
     let updatedItems;
     if (sectorId === 'root') {
@@ -114,7 +114,7 @@ function App() {
     getTokenAndPush(updatedItems);
   };
 
-  // â”€â”€ Token modal â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
+  //  Token modal 
   const handleTokenSave = () => {
     if (!tokenInput.trim()) return;
     localStorage.setItem('githubToken', tokenInput.trim());
@@ -132,7 +132,7 @@ function App() {
     }
   };
 
-  const saveBtnLabel = saveStatus === 'saving' ? 'Saving...' : saveStatus === 'saved' ? 'âœ“ Saved!' : saveStatus === 'error' ? 'âœ— Failed' : 'ðŸ’¾ Save to GitHub';
+  const saveBtnLabel = saveStatus === 'saving' ? 'Saving...' : saveStatus === 'saved' ? 'Saved!' : saveStatus === 'error' ? 'Failed' : 'Save to GitHub';
 
   return (
     <div style={{ width: '100vw', height: '100vh', overflow: 'hidden', background: 'black' }}>
@@ -167,7 +167,7 @@ function App() {
               {/* Header */}
               <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginBottom: '12px' }}>
                 <h3 style={{ margin: 0 }}>Menu Links</h3>
-                <button onClick={() => setIsAdding(false)} style={{ background: 'none', border: 'none', color: '#666', cursor: 'pointer', fontSize: '18px' }}>âœ•</button>
+                <button onClick={() => setIsAdding(false)} style={{ background: 'none', border: 'none', color: '#666', cursor: 'pointer', fontSize: '18px' }}>x</button>
               </div>
 
               {/* Tabs */}
@@ -184,7 +184,7 @@ function App() {
                       fontSize: '13px', textTransform: 'capitalize'
                     }}
                   >
-                    {tab === 'add' ? '+ Add Link' : 'ðŸ—‘ Manage'}
+                    {tab === 'add' ? '+ Add' : 'Manage'}
                   </button>
                 ))}
               </div>
@@ -197,8 +197,8 @@ function App() {
                   <div className="select-wrapper">
                     <label>Location:</label>
                     <select value={newItem.parentId} onChange={(e) => setNewItem({ ...newItem, parentId: e.target.value })} className="location-select">
-                      <option value="root">ðŸ”µ Main Circle</option>
-                      {items.map(item => (item.children || !item.url) && <option key={item.id} value={item.id}>ðŸ“‚ Inside: {item.label}</option>)}
+                      <option value="root">Main Circle</option>
+                      {items.map(item => (item.children || !item.url) && <option key={item.id} value={item.id}>Inside: {item.label}</option>)}
                     </select>
                   </div>
                   <div style={{ display: 'flex', gap: '10px', marginTop: '15px' }}>
@@ -216,10 +216,10 @@ function App() {
                     <p style={{ fontSize: '11px', color: '#555', margin: '0 0 6px', textTransform: 'uppercase', letterSpacing: '0.1em' }}>Main Circle</p>
                     {items.map((sector, i) => (
                       <div key={sector.id} style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', padding: '7px 0', borderBottom: '1px solid #1e1e1e' }}>
-                        <span style={{ fontSize: '13px', color: '#ccc' }}>ðŸ“‚ {sector.label}</span>
+                        <span style={{ fontSize: '13px', color: '#ccc' }}>{sector.label}</span>
                         <button onClick={() => handleDelete('root', i)} disabled={saveStatus === 'saving'}
                           style={{ background: 'none', border: '1px solid #333', borderRadius: '4px', color: '#ff4444', cursor: 'pointer', padding: '3px 8px', fontSize: '12px' }}>
-                          ðŸ—‘
+                          
                         </button>
                       </div>
                     ))}
@@ -239,7 +239,7 @@ function App() {
                           </div>
                           <button onClick={() => handleDelete(sector.id, i)} disabled={saveStatus === 'saving'}
                             style={{ background: 'none', border: '1px solid #333', borderRadius: '4px', color: '#ff4444', cursor: 'pointer', padding: '3px 8px', fontSize: '12px', marginLeft: '8px', flexShrink: 0 }}>
-                            ðŸ—‘
+                            
                           </button>
                         </div>
                       ))}
@@ -267,14 +267,14 @@ function App() {
             <motion.div className="add-modal" initial={{ scale: 0.9, opacity: 0 }} animate={{ scale: 1, opacity: 1 }} exit={{ scale: 0.9, opacity: 0 }}>
               <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>
                 <h3>GitHub Token</h3>
-                <button onClick={() => setIsTokenModalOpen(false)} style={{ background: 'none', border: 'none', color: '#666', cursor: 'pointer' }}>âœ•</button>
+                <button onClick={() => setIsTokenModalOpen(false)} style={{ background: 'none', border: 'none', color: '#666', cursor: 'pointer' }}>x</button>
               </div>
               <p style={{ fontSize: '12px', color: '#888', margin: '8px 0 16px' }}>
-                One-time setup. Fine-grained token with <strong style={{ color: '#ffaa00' }}>Contents: Read &amp; Write</strong>. Stored in your browser only.
+                One-time setup. Fine-grained token with <strong style={{ color: '#ffaa00' }}>Contents: Read and Write</strong>. Stored in your browser only.
               </p>
               <input type="password" placeholder="github_pat_..." value={tokenInput} onChange={(e) => setTokenInput(e.target.value)} autoFocus onKeyDown={(e) => e.key === 'Enter' && handleTokenSave()} />
               <div style={{ display: 'flex', gap: '10px', marginTop: '15px' }}>
-                <button className="save-btn" onClick={handleTokenSave}>Save &amp; Continue</button>
+                <button className="save-btn" onClick={handleTokenSave}>Save and Continue</button>
                 <button className="reset-btn" onClick={() => { localStorage.removeItem('githubToken'); setIsTokenModalOpen(false); }}>Clear Token</button>
               </div>
             </motion.div>
