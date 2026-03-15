@@ -55,20 +55,14 @@
         "label": "Brookes"
       },
       {
-        "id": 1773544755500,
         "label": "animalflow",
         "url": "https://youtube.com/@animalflow?si=8en7UV447HG7-6BM",
-        "icon": "link",
-        "img": null,
-        "children": null
+        "icon": "link"
       },
       {
-        "id": 1773565848779,
         "label": "Quantum Tech Hd",
         "url": "https://youtube.com/@quantumtech?si=nBXo1pCTK2bDlGc7",
-        "icon": "link",
-        "img": null,
-        "children": null
+        "icon": "link"
       }
     ]
   },
@@ -141,7 +135,7 @@
       },
       {
         "icon": "stockmock",
-        "url": "https://https://www.stockmock.in/#!/",
+        "url": "https://www.stockmock.in/#!/",
         "label": "Stockmock"
       }
     ]
@@ -222,12 +216,9 @@
         "label": "Render"
       },
       {
-        "id": 1773363348531,
         "label": "BitWarden",
         "url": "https://vault.bitwarden.com/#/login",
-        "icon": "link",
-        "img": null,
-        "children": null
+        "icon": "link"
       }
     ]
   }
