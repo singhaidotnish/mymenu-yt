@@ -22,6 +22,22 @@ function App() {
 
   const [items] = useState(initialData);
 
+  //  Error notification: clipboard + WhatsApp 
+  const notifyError = (errMsg) => {
+    // 1. Copy to clipboard
+    try { navigator.clipboard.writeText('mymenu-yt save error: ' + errMsg); } catch(e) {}
+
+    // 2. Show WhatsApp alert with message pre-filled
+    const waText = encodeURIComponent('mymenu-yt save error:\n' + errMsg);
+    const waUrl  = 'https://wa.me/919029555541?text=' + waText;
+
+    // Use confirm so it works on mobile without needing a modal
+    const go = window.confirm(
+      'Save to GitHub failed.\n\nError copied to clipboard.\n\nError: ' + errMsg + '\n\nTap OK to report via WhatsApp.'
+    );
+    if (go) window.open(waUrl, '_blank');
+  };
+
   //  Push to GitHub 
   const pushToGithub = async (token, itemsToSave) => {
     setSaveStatus('saving');
@@ -47,14 +63,18 @@ function App() {
         setIsAdding(false);
         setNewItem({ label: '', url: '', parentId: 'root' });
       } else {
-        console.error('GitHub error:', await putRes.json());
+        const errData = await putRes.json();
+        const errMsg = errData.message || `HTTP ${putRes.status}`;
+        console.error('GitHub error:', errData);
         setSaveStatus('error');
-        setTimeout(() => setSaveStatus('idle'), 4000);
+        notifyError(errMsg);
+        setTimeout(() => setSaveStatus('idle'), 6000);
       }
     } catch (err) {
       console.error('Save failed:', err);
       setSaveStatus('error');
-      setTimeout(() => setSaveStatus('idle'), 4000);
+      notifyError(err.message || 'Network error');
+      setTimeout(() => setSaveStatus('idle'), 6000);
     }
   };
 
