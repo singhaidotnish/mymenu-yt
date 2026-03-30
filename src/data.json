@@ -259,6 +259,14 @@
         "icon": "link",
         "img": null,
         "children": null
+      },
+      {
+        "id": 1774851474568,
+        "label": "smallpdf",
+        "url": "https://smallpdf.com/#r=app",
+        "icon": "link",
+        "img": null,
+        "children": null
       }
     ]
   }
