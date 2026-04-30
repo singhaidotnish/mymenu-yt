@@ -76,7 +76,7 @@
   },
   {
     "id": "ai",
-    "label": "AI Tools",
+    "label": "AI",
     "icon": "bot",
     "children": [
       {
