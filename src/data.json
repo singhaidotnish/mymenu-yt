@@ -299,6 +299,14 @@
         "icon": "link",
         "img": null,
         "children": null
+      },
+      {
+        "id": 1777542547156,
+        "label": "wokwi simulation ",
+        "url": "https://wokwi.com",
+        "icon": "link",
+        "img": null,
+        "children": null
       }
     ]
   }
