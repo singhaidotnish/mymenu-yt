@@ -371,6 +371,14 @@
         "icon": "link",
         "img": null,
         "children": null
+      },
+      {
+        "id": 1783261319139,
+        "label": "Jira",
+        "url": "https://awaasset.atlassian.net/jira",
+        "icon": "link",
+        "img": null,
+        "children": null
       }
     ]
   }
